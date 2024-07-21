@@ -26,5 +26,71 @@
             </div>
         </div>
     </div>
+<!---------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">    
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, placeat facere optio, voluptatum itaque totam fugiat accusamus aliquid eum neque distinctio illum, alias harum doloremque sequi veniam. Neque, at. Numquam vitae culpa atque a nesciunt odit nemo repellendus eveniet esse possimus neque ex, est voluptatem consequatur quam repellat sed, recusandae incidunt. Officia fuga repudiandae eius fugiat ut minus iusto non alias. Voluptates provident deleniti commodi aliquam ipsa eveniet? Molestiae maiores voluptatum unde culpa placeat eligendi sit autem, laboriosam aliquam provident quibusdam cupiditate cum iste repellendus distinctio nesciunt, animi fugit itaque illo deserunt tenetur doloribus nemo ipsum ipsa. Doloremque, quo excepturi!</p>
+                    
+                </div>
+                <div class="about-col-2">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, javascript</li>
+                            <li><span>Problem Solving using DSA</span><br>java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June 2023 - July 2023</span><br>Techgyan Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech(CSE) from Sharda University</li>
+                            <li><span>2020</span><br>Intermediate from St. Mary's Convent High School</li>
+                            <li><span>2018</span><br>Marticulate from St. Mary's Convent High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vero aliquam sed, aspernatur tempora recusandae officiis maxime, quod amet illo placeat mollitia esse possimus reprehenderit sint quia autem expedita adipisci deserunt. Esse, eum? Quo laborum distinctio hic, voluptate officiis itaque! Itaque enim reprehenderit accusantium voluptatibus, fuga aliquid dolorum nam ipsa?</p>
+                    <a href="#">learn more</a>
+                    <h2>Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus, veritatis voluptate eligendi maxime odit itaque voluptatum molestiae tempora, velit tempore doloribus nisi voluptates quam. Earum veniam totam cum itaque commodi, eum aperiam iure dolorum deserunt a rerum cupiditate praesentium laudantium, iusto quos reprehenderit sed quam in placeat exercitationem error.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
