@@ -225,7 +225,47 @@ h1{
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    font-size: 15px;
 }
 .btn:hover {
     background: #cb8f2f;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #cb8f2f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2b2828;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+form .btn2{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: #2b2828;
+    font-weight: 300;
+    margin-top: 20px;
 }
